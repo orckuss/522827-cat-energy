@@ -1,0 +1,61 @@
+.toggle-button {
+  display: none;
+  justify-content: space-between;
+  width: 84px;
+  height: 14px;
+  padding: 3px 5px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+
+    display: block;
+    width: 35px;
+    height: 6px;
+
+    border-radius: 4px;
+  }
+
+  &::before {
+    left: 5px;
+  }
+
+  &::after {
+    right: 5px;
+  }
+
+  &--off {
+    &::before {
+      background-color: #68b738;
+    }
+  }
+
+  &--on {
+    &::after {
+      background-color: #68b738;
+    }
+  }
+
+  &--mobile-on {
+    @media (max-width: $tablet-width - 1px) {
+      display: flex;
+    }
+  }
+
+  &--tablet-on {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+      display: flex;
+    }
+  }
+
+  &--desktop-on {
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+}
