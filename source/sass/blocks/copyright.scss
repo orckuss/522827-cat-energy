@@ -1,0 +1,37 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+
+  outline: none;
+
+  svg {
+    fill: #666666;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    svg {
+      margin-left: 23px;
+    }
+  }
+}
