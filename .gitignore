@@ -1,3 +1,4 @@
+.tern-project
 .DS_Store
 .idea
 .vscode
@@ -7,6 +8,7 @@
 *.psd
 *.sublime*
 node_modules/
+build/
+preview/
 npm-debug.*
-source/css/*.css
 Thumbs.db
