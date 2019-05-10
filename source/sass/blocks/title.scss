@@ -1,0 +1,32 @@
+.title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+
+  &--size-small {
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .title {
+    &--theme-white {
+      line-height: 36px;
+      color: #ffffff;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 60px;
+
+    &--size-small {
+      font-size: 36px;
+    }
+  }
+}
