@@ -31,13 +31,13 @@
 
   &--off {
     &::before {
-      background-color: #68b738;
+      background-color: $green;
     }
   }
 
   &--on {
     &::after {
-      background-color: #68b738;
+      background-color: $green;
     }
   }
 

@@ -8,22 +8,22 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
+  color: $white;
   text-transform: uppercase;
   text-align: center;
 
-  background-color: #68b738;
+  background-color: $green;
   border: none;
   outline: none;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: #5eaa2f;
+    background-color: $darkgreen;
   }
 
   &:active {
-    color: rgba(#ffffff, 30%);
+    color: rgba($white, 30%);
   }
 }
 
