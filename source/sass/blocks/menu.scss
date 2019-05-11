@@ -15,7 +15,7 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  color: #111111;
+  color: $hcolor;
 
   border-bottom: 1px solid #e6e6e6;
   outline: none;
@@ -71,7 +71,7 @@
       width: 100%;
       height: 2px;
 
-      background-color: #68b738;
+      background-color: $green;
     }
   }
 }
@@ -89,10 +89,10 @@
     font-size: 20px;
 
     &--theme-white {
-      color: #ffffff;
+      color: $white;
 
       &::after {
-        background-color: #ffffff;
+        background-color: $white;
       }
     }
   }
