@@ -2,7 +2,7 @@
   padding-top: 18px;
   padding-bottom: 30px;
 
-  background-color: #f2f2f2;
+  background-color: $light-grey;
 }
 
 .example__wrapper {
@@ -33,7 +33,7 @@
     padding-top: 46px;
     padding-bottom: 67px;
 
-    background-image: linear-gradient(#ffffff 619px, #f2f2f2 619px);
+    background-image: linear-gradient($white 619px, $light-grey 619px);
   }
 
   .example__wrapper {
@@ -57,7 +57,7 @@
 @media (min-width: $desktop-width) {
   .example {
     padding-top: 24px;
-    background-image: linear-gradient(#ffffff 217px, #f2f2f2 217px);
+    background-image: linear-gradient($white 217px, $light-grey 217px);
   }
 
   .example__container {
