@@ -16,7 +16,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $hcolor;
   text-transform: uppercase;
 }
 
@@ -29,7 +29,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $txtcolor;
 }
 
 .map__image {
@@ -94,7 +94,7 @@
     padding-right: 76px;
     padding-left: 76px;
 
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   .map__text {
