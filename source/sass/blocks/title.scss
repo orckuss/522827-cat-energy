@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
-  color: #111111;
+  color: $hcolor;
 
   &--size-small {
     font-size: 24px;
@@ -16,7 +16,7 @@
   .title {
     &--theme-white {
       line-height: 36px;
-      color: #ffffff;
+      color: $white;
     }
   }
 }
