@@ -29,10 +29,10 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
-    color: #444444;
+    color: $txtcolor;
     text-align: center;
 
-    background-color: #f2f2f2;
+    background-color: $light-grey;
   }
 
   td:last-child {
@@ -46,7 +46,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
-    color: #111111;
+    color: $hcolor;
     text-align: center;
     text-transform: uppercase;
 
@@ -71,7 +71,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #111111;
+    color: $hcolor;
     text-transform: uppercase;
   }
 }
@@ -91,7 +91,7 @@
       font-size: 14px;
       line-height: 14px;
 
-      background-color: #ffffff;
+      background-color: $white;
     }
 
     td:last-child {
@@ -132,7 +132,7 @@
   .table__time,
   .table__weight {
     td:first-child {
-      background-color: #f2f2f2;
+      background-color: $light-grey;
     }
   }
 
