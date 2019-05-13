@@ -1,0 +1,16 @@
+.main__front {
+  margin-bottom: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .main__front {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__front {
+    margin-top: -113px;
+    margin-bottom: 80px;
+  }
+}
