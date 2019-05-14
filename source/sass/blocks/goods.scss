@@ -5,7 +5,6 @@ $bordercolor: #ededed;
   padding: 0;
 
   border: 1px solid $bordercolor;
-  border-bottom: none;
   list-style: none;
 }
 
@@ -17,6 +16,10 @@ $bordercolor: #ededed;
   padding-left: 19px;
 
   border-bottom: 1px solid $bordercolor;
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .goods__product {
