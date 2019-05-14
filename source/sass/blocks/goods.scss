@@ -4,7 +4,7 @@ $bordercolor: #ededed;
   margin: 0;
   padding: 0;
 
-  border: 1px solid $bordercolor;
+  border-top: 1px solid $bordercolor;
   list-style: none;
 }
 
@@ -15,11 +15,8 @@ $bordercolor: #ededed;
   padding-bottom: 24px;
   padding-left: 19px;
 
-  border-bottom: 1px solid $bordercolor;
-
-  &:last-child {
-    border-bottom: none;
-  }
+  border: 1px solid $bordercolor;
+  border-top: none;
 }
 
 .goods__product {
@@ -31,26 +28,31 @@ $bordercolor: #ededed;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-right: 30px;
-    padding-left: 30px;
 
     border: none;
   }
 
   .goods__item {
-    width: 324px;
+    width: 42.1875%;
     margin-top: 82px;
+    margin-right: 30px;
     margin-bottom: 58px;
-    padding-top: 126px;
-    padding-right: 37px;
-    padding-bottom: 40px;
-    padding-left: 38px;
+    margin-left: 30px;
+    padding: 40px 38px;
 
     background-color: $light-grey;
-    border-bottom: none;
+    border: none;
+
+    &--theme-white {
+      padding: 39px 37px;
+
+      background-color: $white;
+      border: 1px solid #e6e6e6;
+    }
   }
 
   .goods__product {
+    margin-top: 86px;
     margin-bottom: 33px;
   }
 }
@@ -58,14 +60,15 @@ $bordercolor: #ededed;
 @media (min-width: $desktop-width) {
   .goods__list {
     width: $desktop-width;
+    justify-content: flex-start;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 40px;
-    padding-left: 40px;
-  }
 
-  .goods__item {
-    width: 245px;
-    margin-bottom: 60px;
+    li {
+      width: 245px;
+      margin-right: 40px;
+      margin-bottom: 60px;
+      margin-left: 40px;
+    }
   }
 }
