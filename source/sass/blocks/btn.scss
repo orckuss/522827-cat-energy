@@ -25,6 +25,11 @@
   &:active {
     color: rgba($white, 30%);
   }
+
+  &--theme-grey {
+    color: $txtcolor;
+    background-color: $light-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
