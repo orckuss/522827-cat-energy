@@ -1,7 +1,5 @@
 .front {
   padding-top: 27px;
-  padding-right: 20px;
-  padding-left: 20px;
 
   background-image: url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
@@ -12,12 +10,11 @@
 .front__wrapper {
   display: flex;
   flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-.front__text {
-  width: 280px;
-  align-self: center;
-
+.front__header {
   text-align: center;
 }
 
@@ -48,8 +45,6 @@
 @media (min-width: $tablet-width) {
   .front {
     padding-top: 59px;
-    padding-right: 30px;
-    padding-left: 30px;
 
     background-image: none;
   }
@@ -57,9 +52,11 @@
   .front__wrapper {
     position: relative;
     align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
-  .front__text {
+  .front__header {
     width: 427px;
     margin-left: 89px;
     align-self: flex-start;
@@ -86,28 +83,28 @@
   .front__btn {
     position: absolute;
     top: 228px;
-    left: 89px;
+    left: 119px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .front {
     padding-top: 142px;
-    padding-right: 0;
     padding-bottom: 55px;
-    padding-left: 0;
 
     background-image: url("../img/index-background-desktop.jpg");
     background-position: 100% 0;
   }
 
   .front__wrapper {
-    width: 1220px;
+    width: $desktop-width;
     margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
     flex-direction: row;
   }
 
-  .front__text {
+  .front__header {
     margin-top: 81px;
     margin-right: -57px;
     margin-left: 80px;
@@ -115,6 +112,6 @@
 
   .front__btn {
     top: 314px;
-    left: 80px;
+    left: 120px;
   }
 }
