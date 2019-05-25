@@ -1,0 +1,131 @@
+$border-color: #cdcdcd;
+
+.others {
+  padding-top: 29px;
+}
+
+.others__heading {
+  margin-top: 0;
+  margin-bottom: 33px;
+  margin-left: 20px;
+}
+
+.others__list,
+.others__text {
+  margin: 0 20px;
+}
+
+.others__list {
+  margin-bottom: 39px;
+  padding: 0;
+
+  border-top: 1px solid $border-color;
+  list-style: none;
+}
+
+.others__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid $border-color;
+}
+
+.others__title {
+  margin-top: 0;
+  margin-bottom: 13px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.others__table {
+  margin-bottom: 15px;
+  border-collapse: collapse;
+
+  td {
+    padding: 0;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+.others__text {
+  position: relative;
+  padding-top: 186px;
+  padding-right: 56px;
+  padding-bottom: 43px;
+  padding-left: 54px;
+
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+
+  background-color: $green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 50%;
+
+    width: 55px;
+    height: 60px;
+
+    background-image: url("../img/gift.svg");
+    background-repeat: no-repeat;
+
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  $border-color: #e6e6e6;
+
+  .others {
+    padding-top: 10px;
+  }
+
+  .others__heading {
+    margin-bottom: 79px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .others {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .others__heading {
+    width: 100%;
+    margin-left: calc((100% - 1300px) / 2 + 40px);
+  }
+
+  .others__list,
+  .others__text {
+    margin: 0 40px;
+  }
+}
