@@ -41,7 +41,7 @@
     padding-left: 0;
 
     &::before {
-      right: 100% + 40px;
+      right: calc(100% + 40px);
       width: 100%;
     }
   }
