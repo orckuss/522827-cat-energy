@@ -1,4 +1,4 @@
-.label-txt {
+.label {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -9,7 +9,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .label-txt {
+  .label {
     font-size: 20px;
     line-height: 20px;
   }
