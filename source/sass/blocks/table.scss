@@ -1,0 +1,154 @@
+.table {
+  display: block;
+  width: 280px;
+  border-spacing: 0;
+}
+
+.table tbody {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.table__weight,
+.table__time {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  td:first-child {
+    z-index: 1;
+
+    display: block;
+    width: 87px;
+    padding: 0 10px;
+    margin-top: -9px;
+
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #444444;
+    text-align: center;
+
+    background-color: #f2f2f2;
+  }
+
+  td:last-child {
+    display: block;
+    width: 124px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #111111;
+    text-align: center;
+    text-transform: uppercase;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+  }
+}
+
+.table__cost {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 19px;
+  order: 1;
+
+  td {
+    display: block;
+    padding: 0;
+
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #111111;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .table {
+    width: 708px;
+  }
+
+  .table__weight,
+  .table__time {
+    td:first-child {
+      width: auto;
+      padding-left: 8px;
+      padding-right: 9px;
+
+      font-size: 14px;
+      line-height: 14px;
+
+      background-color: #ffffff;
+    }
+
+    td:last-child {
+      width: 162px;
+      padding-top: 15px;
+      padding-bottom: 18px;
+
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  .table__weight {
+    margin-right: 42px;
+  }
+
+  .table__cost {
+    flex-direction: column;
+    align-self: flex-start;
+    width: auto;
+    margin-top: 12px;
+    margin-right: 0;
+
+    td {
+      margin-bottom: 9px;
+
+      font-size: 20px;
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .table {
+    width: 366px;
+  }
+
+  .table__time,
+  .table__weight {
+    td:first-child {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .table__cost {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 56px;
+
+    td {
+      margin-bottom: 0;
+
+      &:last-child {
+        width: 162px;
+        text-align: center;
+      }
+    }
+  }
+}

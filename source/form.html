@@ -12,6 +12,71 @@
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
+    <footer class="footer">
+      <div class="map">
+        <h2 class="visually-hidden">Наши координаты</h2>
+        <div class="map__wrapper">
+          <div class="map__header">
+            <p class="map__tagline">
+              приглашаем
+              к&nbsp;сотрудничеству
+              дилеров!
+            </p>
+            <p class="map__text">
+              ул. Большая
+              Конюшенная, д. 19/8
+              <span>Санкт-Петербург</span>
+            </p>
+          </div>
+          <div class="map__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/map-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp">
+              <source type="image/webp" media="(min-width: 320px)" srcset="img/map-mobile.webp">
+              <source media="(min-width: 1300px)" srcset="img/map-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
+              <img src="img/map-mobile.jpg" alt="Карта">
+            </picture>
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3010041154722!2d30.3222722!3d59.938746!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557062917548!5m2!1sru!2sru" width="320" height="363" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer__wrapper container">
+        <a href="#" class="footer__link"><img src="img/logo-mobile-text.svg" alt="Cat Energy" width="128" height="24"></a>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--vk">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="22" height="12">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg width="16" height="16">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--fb">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg width="10" height="19">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a href="https://htmlacademy.ru" class="footer__copyright copyright">
+          HTML Academy
+          <svg width="27" height="34">
+            <use xlink:href="#icon-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/app.min.js"></script>
