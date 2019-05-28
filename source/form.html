@@ -34,6 +34,25 @@
     </header>
     <main class="main">
       <h1 class="main__title title">Подбор программы</h1>
+      <fieldset class="personal-data">
+        <legend class="personal-data__title title title--size-small subtitle">Контактные данные<br>(владельца кота)</legend>
+        <ul class="personal-data__list">
+          <li class="personal-data__item">
+            <label for="email" class="label">E-mail:*</label>
+            <input type="email" class="input" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <svg width="17" height="13">
+              <use xlink:href="#icon-mail">
+            </svg>
+          </li>
+          <li class="personal-data__item">
+            <label for="phone" class="label">Телефон:*</label>
+            <input type="tel" class="input" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+            <svg width="20" height="20">
+              <use xlink:href="#icon-phone">
+            </svg>
+          </li>
+        </ul>
+      </fieldset>
     </main>
     <footer class="footer">
       <div class="map">
