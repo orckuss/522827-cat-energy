@@ -1,3 +1,7 @@
+.main {
+  overflow: hidden;
+}
+
 .main__front {
   margin-bottom: 22px;
 }
@@ -21,16 +25,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main {
+    width: $desktop-width;
+  }
+
   .main__front {
     margin-top: -113px;
     margin-bottom: 80px;
   }
 
   .main__title {
-    width: 1220px;
     margin-top: 78px;
-    margin-right: auto;
     margin-bottom: 81px;
-    margin-left: auto;
+    margin-left: 40px;
   }
 }
