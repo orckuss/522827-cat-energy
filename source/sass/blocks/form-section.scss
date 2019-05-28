@@ -1,0 +1,35 @@
+.form-section__text {
+  width: 226px;
+  margin-top: 0;
+  margin-bottom: 39px;
+  margin-left: 20px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $hcolor;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form-section__text {
+    width: 322px;
+    margin-bottom: 65px;
+    margin-left: 70px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-section {
+    width: $desktop-width;
+  }
+
+  .form-section__text {
+    margin-left: 40px;
+  }
+}
