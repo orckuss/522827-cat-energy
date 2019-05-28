@@ -1,3 +1,7 @@
+.main {
+  overflow: hidden;
+}
+
 .main__front {
   margin-bottom: 22px;
 }
@@ -27,10 +31,11 @@
   }
 
   .main__title {
-    width: 1220px;
+    width: $desktop-width;
     margin-top: 78px;
     margin-right: auto;
     margin-bottom: 81px;
     margin-left: auto;
+    padding-left: 40px;
   }
 }
