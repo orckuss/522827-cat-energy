@@ -105,7 +105,7 @@ $border-color: #cdcdcd;
 
   .others__heading {
     margin-bottom: 79px;
-    margin-left: 30px;
+    margin-left: 67px;
   }
 
   .others__list,
@@ -190,15 +190,16 @@ $border-color: #cdcdcd;
   $border-color: #cdcdcd;
 
   .others {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: $desktop-width;
     padding-top: 16px;
   }
 
   .others__heading {
-    width: 100%;
-    margin-left: calc((100% - 1300px) / 2 + 40px);
+    margin-left: 40px;
+  }
+
+  .others__wrapper {
+    display: flex;
   }
 
   .others__list,
@@ -208,7 +209,7 @@ $border-color: #cdcdcd;
   }
 
   .others__list {
-    width: 895px;
+    flex-grow: 1;
 
     border-left: none;
     border-right: none;
