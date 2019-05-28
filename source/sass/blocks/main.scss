@@ -25,18 +25,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main {
-    width: $desktop-width;
-  }
-
   .main__front {
     margin-top: -113px;
     margin-bottom: 80px;
   }
 
   .main__title {
+    width: $desktop-width;
     margin-top: 78px;
+    margin-right: auto;
     margin-bottom: 81px;
-    margin-left: 40px;
+    margin-left: auto;
+    padding-left: 40px;
   }
 }
