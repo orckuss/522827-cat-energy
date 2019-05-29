@@ -1,3 +1,7 @@
+.form-section {
+  padding-top: 24px;
+}
+
 .form-section__text {
   width: 226px;
   margin-top: 0;
@@ -14,6 +18,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-section {
+    padding-top: 13px;
+  }
+
   .form-section__text {
     width: 322px;
     margin-bottom: 65px;
