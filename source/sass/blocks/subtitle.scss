@@ -1,48 +1,39 @@
 .subtitle {
-  display: flex;
+  display: inline-block;
+  position: relative;
 
   &::before,
   &::after {
     content: "";
+    position: absolute;
+    top: 13px;
+
     display: block;
+    width: 1000%;
     height: 3px;
 
     background-color: $green;
   }
 
+  &::before {
+    right: calc(100% + 24px);
+  }
+
   &::after {
-    margin-top: 13px;
-    margin-left: 24px;
-    flex-grow: 1;
+    left: calc(100% + 24px);
   }
 }
 
 @media (min-width: $tablet-width) {
   .subtitle {
-    position: relative;
-    padding-left: 37px;
-
     &::before {
-      position: absolute;
       top: 21px;
-      right: 100%;
-      width: 30px;
+      right: calc(100% + 40px);
     }
 
     &::after {
-      margin-top: 21px;
-      margin-left: 38px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .subtitle {
-    padding-left: 0;
-
-    &::before {
-      right: calc(100% + 40px);
-      width: 100%;
+      top: 21px;
+      left: calc(100% + 40px);
     }
   }
 }

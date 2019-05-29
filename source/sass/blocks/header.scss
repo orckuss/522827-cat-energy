@@ -1,0 +1,14 @@
+@media (min-width: $tablet-width) {
+  .header {
+    padding: 0 30px;
+    padding-top: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    max-width: $desktop-width;
+    padding: 0 40px;
+    padding-top: 54px;
+  }
+}
