@@ -55,7 +55,23 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__radio-group"></fieldset>
+          <fieldset class="form__radio-group radio-group">
+            <legend class="visually-hidden">Выберете программу</legend>
+            <ul class="radio-group__list">
+              <li class="radio-group__item">
+                <input id="weightLoss" type="radio" name="programs" value="weightLoss" class="visually-hidden" checked>
+                <label for="weightLoss" class="label label--radio">Похудение</label>
+              </li>
+              <li class="radio-group__item">
+                <input id="weightGain" type="radio" name="programs" value="weightGain" class="visually-hidden">
+                <label for="weightGain" class="label label--radio">Набор массы</label>
+              </li>
+              <li class="radio-group__item">
+                <input id="dontKnow" type="radio" name="programs" value="dontKnow" class="visually-hidden">
+                <label for="dontKnow" class="label label--radio">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
           <fieldset class="form__txt-group2"></fieldset>
           <p class="form__textarea"></p>
           <fieldset class="form__checkbox-group"></fieldset>
