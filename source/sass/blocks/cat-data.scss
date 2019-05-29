@@ -13,19 +13,19 @@
   display: flex;
   margin-bottom: 14px;
   align-items: baseline;
-}
 
-.cat-data__input {
-  margin-left: 16px;
-  flex-grow: 1;
+  input {
+    margin-left: 16px;
+    flex-grow: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .cat-data__item {
     margin-bottom: 20px;
-  }
 
-  .cat-data__input {
-    margin-left: 17px;
+    input {
+      margin-left: 17px;
+    }
   }
 }
