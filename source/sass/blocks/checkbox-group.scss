@@ -1,0 +1,42 @@
+.checkbox-group {
+  padding: 0;
+  border: none;
+}
+
+.checkbox-group__title {
+  margin-bottom: 34px;
+}
+
+.checkbox-group__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.checkbox-group__item {
+  margin-bottom: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-group__title {
+    margin-bottom: 56px;
+  }
+
+  .checkbox-group__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .checkbox-group__item {
+    width: 284px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox-group__item {
+    width: 245px;
+    margin: 0;
+  }
+}
