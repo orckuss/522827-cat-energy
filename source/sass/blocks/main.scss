@@ -1,5 +1,7 @@
 .main {
-  overflow-x: hidden;
+  &--inner {
+    overflow-x: hidden;
+  }
 }
 
 .main__front {
