@@ -1,5 +1,9 @@
 $bordercolor: #ededed;
 
+.goods {
+  padding-top: 27px;
+}
+
 .goods__list {
   margin: 0;
   padding: 0;
@@ -20,6 +24,10 @@ $bordercolor: #ededed;
 }
 
 @media (min-width: $tablet-width) {
+  .good {
+    padding-top: 40px;
+  }
+
   .goods__list {
     display: flex;
     justify-content: space-between;
@@ -49,6 +57,10 @@ $bordercolor: #ededed;
 }
 
 @media (min-width: $desktop-width) {
+  .goods {
+    padding-top: 41px;
+  }
+
   .goods__list {
     width: $desktop-width;
     justify-content: flex-start;
