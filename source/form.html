@@ -95,7 +95,27 @@
             <label for="comment" class="comment__title title title--size-small subtitle">Комментарий</label>
             <textarea name="comment" id="comment" class="input input--textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
-          <fieldset class="form__checkbox-group"></fieldset>
+          <fieldset class="form__checkbox-group checkbox-group">
+            <legend class="checkbox-group__title title title--size-small subtitle">Дополнительно</legend>
+            <ul class="checkbox-group__list">
+              <li class="checkbox-group__item">
+                <input type="checkbox" class="visually-hidden" id="sugar" name="sugar" checked>
+                <label for="sugar" class="label label--checkbox">Сахарозаменитель</label>
+              </li>
+              <li class="checkbox-group__item">
+                <input type="checkbox" class="visually-hidden" id="water" name="water">
+                <label for="water" class="label label--checkbox">Питьевая вода</label>
+              </li>
+              <li class="checkbox-group__item">
+                <input type="checkbox" class="visually-hidden" id="milk" name="milk">
+                <label for="milk" class="label label--checkbox">Молоко</label>
+              </li>
+              <li class="checkbox-group__item">
+                <input type="checkbox" class="visually-hidden" id="vitamins" name="vitamins">
+                <label for="vitamins" class="label label--checkbox">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
           <div class="form__bottom">
             <button class="btn btn--size-big" type="submit">Отправить заявку</button>
             <p class="form__text">* — Обязательные поля</p>
