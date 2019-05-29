@@ -1,0 +1,15 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__title {
+  align-self: flex-start;
+  margin-bottom: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .comment__title {
+    margin-bottom: 75px;
+  }
+}

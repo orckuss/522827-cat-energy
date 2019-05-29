@@ -1,0 +1,68 @@
+.input {
+  padding: 12px 15px;
+  padding-bottom: 13px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $txtcolor;
+  text-transform: uppercase;
+
+  border: 1px solid rgba(#cdcdcd, 0.5);
+  outline: none;
+
+  &--error {
+    padding-left: 14px;
+
+    border-width: 2px;
+    border-color: #ff8282;
+  }
+
+  &--textarea {
+    height: 150px;
+    resize: none;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    padding-top: 11px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+
+    border-width: 2px;
+    border-color: #444444;
+  }
+
+  &::placeholder {
+    color: $txtcolor;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    padding: 11px 19px;
+    padding-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &--error {
+      padding-left: 18px;
+    }
+
+    &--textarea {
+      height: 174px;
+    }
+
+    &:focus {
+      padding-top: 10px;
+      padding-bottom: 11px;
+      padding-left: 18px;
+    }
+  }
+}

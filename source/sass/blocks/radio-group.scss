@@ -1,0 +1,25 @@
+.radio-group {
+  padding: 21px 20px;
+  padding-bottom: 9px;
+
+  border: 1px solid #ededed;
+}
+
+.radio-group__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.radio-group__item {
+  margin-bottom: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .radio-group {
+    padding: 25px 28px;
+    padding-bottom: 12px;
+
+    border-color: #cdcdcd;
+  }
+}
