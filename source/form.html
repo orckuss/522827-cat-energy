@@ -38,7 +38,23 @@
         <h2 class="visually-hidden">Анкета для подбора программы</h2>
         <p class="form-section__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__txt-group1"></fieldset>
+          <fieldset class="form__txt-group1 cat-data">
+            <legend class="visually-hidden">Данные кота</legend>
+            <ul class="cat-data__list">
+              <li class="cat-data__item">
+                <label for="pet-name" class="label">Имя:*</label>
+                <input type="text" class="input" name="pet-name" id="pet-name" placeholder="Барсик" required>
+              </li>
+              <li class="cat-data__item">
+                <label for="weight" class="label">Вес (кг):*</label>
+                <input type="text" class="input" name="weight" id="weight" placeholder="7" required>
+              </li>
+              <li class="cat-data__item">
+                <label for="pet-age" class="label">Возраст (лет):</label>
+                <input type="text" class="input" name="pet-age" id="pet-age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
           <fieldset class="form__radio-group"></fieldset>
           <fieldset class="form__txt-group2"></fieldset>
           <p class="form__textarea"></p>
