@@ -1,0 +1,149 @@
+$bd-color: #cdcdcd;
+$bd-color-hover: #bababa;
+
+.label {
+  position: relative;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+
+  &--radio {
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 46px;
+
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      display: block;
+
+      border-radius: 50%;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 30px;
+      height: 30px;
+
+      border: 1px solid $bd-color;
+    }
+
+    &::after {
+      top: 9px;
+      left: 9px;
+
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &--checkbox {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-left: 46px;
+
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 30px;
+      height: 30px;
+
+      border: 1px solid $bd-color;
+    }
+
+    &::after {
+      top: 7px;
+      left: 7px;
+
+      width: 19px;
+      height: 12px;
+
+      border-left: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+input:checked + .label--radio::after {
+  background-color: $green;
+}
+
+input:checked + .label--checkbox::after {
+  border-color: $green;
+}
+
+input[type="radio"]:hover + .label--radio::before,
+input[type="radio"]:focus + .label--radio::before,
+input[type="checkbox"]:hover + .label--checkbox::before,
+input[type="checkbox"]:focus + .label--checkbox::before {
+  border-color: $bd-color-hover;
+}
+
+input[type="radio"]:active + .label--radio,
+input[type="checkbox"]:active + .label--checkbox {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .label {
+    font-size: 20px;
+    line-height: 20px;
+
+    &--radio,
+    &--checkbox {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 60px;
+
+      &::before {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &--radio {
+      &::after {
+        top: 11px;
+        left: 11px;
+
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &--checkbox {
+      &::after {
+        top: 10px;
+        left: 11px;
+
+        width: 21px;
+        height: 12px;
+      }
+    }
+  }
+}
