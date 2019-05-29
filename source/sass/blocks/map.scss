@@ -5,6 +5,10 @@
   padding-right: 20px;
   padding-bottom: 26px;
   padding-left: 20px;
+
+  &--theme-grey {
+    background-color: $light-grey;
+  }
 }
 
 .map__tagline {
