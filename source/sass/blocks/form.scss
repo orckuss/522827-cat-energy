@@ -1,0 +1,137 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__txt-group1 {
+  margin: 0 20px;
+  margin-bottom: 23px;
+}
+
+.form__radio-group {
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.form__txt-group2 {
+  margin: 0 20px;
+  margin-bottom: 29px;
+}
+
+.form__textarea {
+  margin: 0 20px;
+  margin-bottom: 29px;
+}
+
+.form__checkbox-group {
+  margin: 0 20px;
+  margin-bottom: 34px;
+}
+
+.form__bottom {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.form__text {
+  margin-top: 21px;
+  margin-bottom: 0;
+
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $txtcolor;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form__txt-group1,
+  .form__txt-group2,
+  .form__radio-group,
+  .form__checkbox-group,
+  .form__textarea,
+  .form__bottom {
+    margin: 0 70px;
+  }
+
+  .form__txt-group1 {
+    margin-bottom: 72px;
+  }
+
+  .form__radio-group {
+    margin-bottom: 76px;
+  }
+
+  .form__txt-group2 {
+    margin-bottom: 66px;
+  }
+
+  .form__textarea {
+    margin-bottom: 66px;
+  }
+
+  .form__checkbox-group {
+    margin-bottom: 54px;
+  }
+
+  .form__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & > * {
+      width: 284px;
+    }
+  }
+
+  .form__text {
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .form__txt-group1,
+  .form__radio-group {
+    width: 570px;
+    margin: 0 40px;
+    margin-bottom: 70px;
+  }
+
+  .form__txt-group2 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 68px;
+  }
+
+  .form__textarea {
+    width: 100%;
+    margin: 0 40px;
+    margin-bottom: 68px;
+  }
+
+  .form__checkbox-group {
+    width: 100%;
+    margin: 0 40px;
+    margin-bottom: 61px;
+  }
+
+  .form__bottom {
+    width: 100%;
+    margin: 0;
+
+    & > * {
+      margin: 0 40px;
+      flex-grow: 1;
+    }
+  }
+}
