@@ -1,9 +1,15 @@
 .scale {
+  position: relative;
   display: none;
 
   width: 428px;
-  height: 34px;
   padding: 14px 0;
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+  outline: none;
 
   &--mobile-on {
     @media (max-width: $tablet-width - 1px) {
@@ -22,43 +28,46 @@
       display: block;
     }
   }
-}
 
-.scale__bar {
-  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
 
-  width: 100%;
-  height: 6px;
+    background-color: #dcdcdc;
+    border-radius: 2px;
+  }
 
-  background-color: #dcdcdc;
-  border-radius: 2px;
-}
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-.scale__btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+    width: 34px;
+    height: 34px;
 
-  width: 34px;
-  height: 34px;
+    background-color: $green;
+    border: 1px solid $grey;
+    border-radius: 50%;
 
-  background-color: $green;
-  border: 1px solid $grey;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  box-shadow:
-    0 2px 5px 0 rgba($black, 0.15),
-    inset 0 0 0 12px $white;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    outline: none;
+    box-shadow:
+      0 2px 5px 0 rgba($black, 0.15),
+      inset 0 0 0 12px $white;
+  }
 
-  &:hover,
-  &:focus {
+  &:hover::after,
+  &:focus::after {
     box-shadow:
       0 3px 5px 0 rgba($black, 0.25),
       inset 0 0 0 12px $white;
   }
 
-  &:active {
+  &:active::after {
     border-width: 2px;
     border-color: $green;
     box-shadow:
