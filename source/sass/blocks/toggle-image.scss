@@ -8,21 +8,25 @@
   height: 240px;
   margin-bottom: 32px;
 
+  overflow-x: hidden;
+
   img {
     display: block;
   }
 }
 
-.toggle-image__before {
+.toggle-image__before,
+.toggle-image__after {
   position: absolute;
   bottom: 0;
+}
+
+.toggle-image__before {
   left: 0;
 }
 
 .toggle-image__after {
-  position: absolute;
-  right: 26px;
-  bottom: 0;
+  left: 43px;
 
   width: 0;
 }
@@ -93,6 +97,7 @@
   }
 
   .toggle-image__after {
+    left: auto;
     right: 0;
 
     width: 50%;
