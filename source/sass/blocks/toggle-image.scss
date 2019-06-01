@@ -13,16 +13,20 @@
   }
 }
 
-.toggle-image__before {
+.toggle-image__before,
+.toggle-image__after {
   position: absolute;
   bottom: 0;
+
+  overflow-x: hidden;
+}
+
+.toggle-image__before {
   left: 0;
 }
 
 .toggle-image__after {
-  position: absolute;
-  right: 26px;
-  bottom: 0;
+  left: 43px;
 
   width: 0;
 }
@@ -81,8 +85,6 @@
     width: 50%;
     height: 499px;
 
-    overflow-x: hidden;
-
     img {
       position: absolute;
       left: 16px;
@@ -93,12 +95,11 @@
   }
 
   .toggle-image__after {
+    left: auto;
     right: 0;
 
     width: 50%;
     height: 517px;
-
-    overflow-x: hidden;
 
     img {
       position: absolute;
