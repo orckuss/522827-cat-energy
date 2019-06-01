@@ -50,3 +50,24 @@ $('.js-btn-scale').mousedown(function(event) {
 }).mouseout(function() {
   $(this).off('mousemove');
 });
+
+var btnScale = document.querySelector('.js-btn-scale');
+
+btnScale.addEventListener('touchstart', function(event) {
+  event.preventDefault();
+  var startPosition = event.touches[0].pageX;
+  var left = $(this).position().left + $(this).outerWidth() / 2;
+  this.addEventListener('touchmove', function(event) {
+    left += event.touches[0].pageX - startPosition;
+    if ((left >= 0) && (left <= $(this).parent().width())) {
+      $(this).css('left', left);
+    }
+    $('.js-img-before').width(
+      $('.js-img-before').parent().width() * left / $('.js-btn-scale').parent().width()
+    );
+    $('.js-img-after').width(
+      $('.js-img-after').parent().width() * (1 - left / $('.js-btn-scale').parent().width())
+    );
+    startPosition = event.touches[0].pageX;
+  });
+});
