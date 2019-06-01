@@ -8,14 +8,14 @@ $('.js-btn-before').click(function() {
   $('.toggle-button').addClass('toggle-button--off').removeClass('toggle-button--on');
   $('.js-img-before').css('width', '100%');
   $('.js-img-after').css('width', '0');
-  $('.js-btn-scale').css('left', '0');
+  $('.js-btn-scale').css('left', '100%');
 });
 
 $('.js-btn-after').click(function() {
   $('.toggle-button').addClass('toggle-button--on').removeClass('toggle-button--off');
   $('.js-img-after').css('width', '100%');
   $('.js-img-before').css('width', '0');
-  $('.js-btn-scale').css('left', '100%');
+  $('.js-btn-scale').css('left', '0');
 });
 
 $('.toggle-button').click(function() {
@@ -30,14 +30,20 @@ $('.toggle-button').click(function() {
 });
 
 $('.js-btn-scale').mousedown(function(event) {
-  var startPosition = event.pageX;
+  var startCursorPosition = event.pageX;
   var left = $(this).position().left + $(this).outerWidth() / 2;
   $(this).mousemove(function(event) {
-    left += event.pageX - startPosition;
-    $(this).css('left', left);
-    $('.js-img-before').width($('.js-img-before').width() + (event.pageX - startPosition));
-    $('.js-img-after').width($('.js-img-after').width() - (event.pageX - startPosition));
-    startPosition = event.pageX;
+    left += event.pageX - startCursorPosition;
+    if ((left >= 0) && (left <= $(this).parent().width())) {
+      $(this).css('left', left);
+    }
+    $('.js-img-before').width(
+      $('.js-img-before').parent().width() * left / $('.js-btn-scale').parent().width()
+    );
+    $('.js-img-after').width(
+      $('.js-img-after').parent().width() * (1 - left / $('.js-btn-scale').parent().width())
+    );
+    startCursorPosition = event.pageX;
   });
 }).mouseup(function() {
   $(this).off('mousemove');
