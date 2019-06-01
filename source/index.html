@@ -125,13 +125,13 @@
           </div>
           <div class="example__image toggle-image">
             <div class="toggle-image__pictures">
-              <picture class="toggle-image__before">
+              <picture class="toggle-image__before js-img-before">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 320px)" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Живой пример">
               </picture>
-              <picture class="toggle-image__after">
+              <picture class="toggle-image__after js-img-after">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 320px)" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
@@ -139,14 +139,14 @@
               </picture>
             </div>
             <div class="toggle-image__control">
-              <button class="toggle-image__button" type="button">Было</button>
+              <button class="toggle-image__button js-btn-before" type="button">Было</button>
               <button class="toggle-image__toggle-button toggle-button toggle-button--off toggle-button--mobile-on" type="button"><span class="visually-hidden">Переключатель</span></button>
               <div class="toggle-image__scale scale scale--tablet-on scale--desktop-on">
                 <div class="scale__bar">
                   <div class="scale__btn"></div>
                 </div>
               </div>
-              <button class="toggle-image__button" type="button">Стало</button>
+              <button class="toggle-image__button js-btn-after" type="button">Стало</button>
             </div>
           </div>
         </div>
