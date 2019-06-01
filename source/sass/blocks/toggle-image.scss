@@ -8,6 +8,8 @@
   height: 240px;
   margin-bottom: 32px;
 
+  overflow-x: hidden;
+
   img {
     display: block;
   }
@@ -17,8 +19,6 @@
 .toggle-image__after {
   position: absolute;
   bottom: 0;
-
-  overflow-x: hidden;
 }
 
 .toggle-image__before {
@@ -85,6 +85,8 @@
     width: 50%;
     height: 499px;
 
+    overflow-x: hidden;
+
     img {
       position: absolute;
       left: 16px;
@@ -100,6 +102,8 @@
 
     width: 50%;
     height: 517px;
+
+    overflow-x: hidden;
 
     img {
       position: absolute;
