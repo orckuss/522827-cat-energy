@@ -28,3 +28,19 @@ $('.toggle-button').click(function() {
     $('.js-img-before').css('width', '0');
   }
 });
+
+$('.js-btn-scale').mousedown(function(event) {
+  var startPosition = event.pageX;
+  var left = $(this).position().left + $(this).outerWidth() / 2;
+  $(this).mousemove(function(event) {
+    left += event.pageX - startPosition;
+    $(this).css('left', left);
+    $('.js-img-before').width($('.js-img-before').width() + (event.pageX - startPosition));
+    $('.js-img-after').width($('.js-img-after').width() - (event.pageX - startPosition));
+    startPosition = event.pageX;
+  });
+}).mouseup(function() {
+  $(this).off('mousemove');
+}).mouseout(function() {
+  $(this).off('mousemove');
+});
