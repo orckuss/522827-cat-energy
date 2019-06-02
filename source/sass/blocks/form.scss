@@ -81,10 +81,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
 
-    & > * {
-      width: 284px;
-    }
+  .form__btn,
+  .form__text {
+    width: 284px;
   }
 
   .form__text {
@@ -128,10 +129,11 @@
   .form__bottom {
     width: 100%;
     margin: 0;
+  }
 
-    & > * {
-      margin: 0 40px;
-      flex-grow: 1;
-    }
+  .form__btn,
+  .form__text {
+    margin: 0 40px;
+    flex-grow: 1;
   }
 }
